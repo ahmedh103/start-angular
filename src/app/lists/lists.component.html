@@ -1,0 +1,12 @@
+<input type="text"  [(ngModel)]="newValue">
+
+
+<button  (click)="addName()">Click</button>
+
+
+<ul>
+    <li *ngFor="let data of names">{{data}}
+        <button (click)="Remove(data)">Remove</button>
+    </li>
+ 
+</ul>
